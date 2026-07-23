@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 372" width="1280" height="372" role="img" aria-label="One 3-to-1 map, two dead conjectures">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1030"/>
+      <stop offset="0.5" stop-color="#160c33"/>
+      <stop offset="1" stop-color="#080a1e"/>
+    </linearGradient>
+    <radialGradient id="glowMag" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff6ad5" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff6ad5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3fe0ff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#3fe0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5c451"/>
+      <stop offset="0.55" stop-color="#ff9a62"/>
+      <stop offset="1" stop-color="#ff6ad5"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fe9ff"/>
+      <stop offset="1" stop-color="#f5c451"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="372" fill="url(#bg)"/>
+  <circle cx="200" cy="30" r="330" fill="url(#glowMag)"/>
+  <circle cx="1180" cy="350" r="350" fill="url(#glowCyan)"/>
+
+  <!-- faint coordinate grid: the ambient C^3 -->
+  <g stroke="#9fb4ff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M80 0V372M160 0V372M240 0V372M320 0V372M400 0V372M480 0V372M560 0V372M640 0V372M720 0V372M800 0V372M880 0V372M960 0V372M1040 0V372M1120 0V372M1200 0V372"/>
+    <path d="M0 80H1280M0 160H1280M0 240H1280M0 320H1280"/>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="70" y="66" font-family="'SF Mono','Consolas',ui-monospace,monospace" font-size="17" letter-spacing="4" fill="#7fe9ff">
+    F : &#8450;&#179; &#10230; &#8450;&#179;  &#183;  POLYNOMIAL  &#183;  det J &#8801; &#8722;2  &#183;  deg F = 3
+  </text>
+
+  <!-- title -->
+  <text x="66" y="158" font-family="Georgia,'Times New Roman',serif" font-size="63" font-weight="700" fill="#f4f7ff">One 3-to-1 map.</text>
+  <text x="66" y="230" font-family="Georgia,'Times New Roman',serif" font-size="63" font-weight="700" fill="url(#tgrad)">Two dead conjectures.</text>
+
+  <!-- subtitle -->
+  <text x="70" y="276" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#aeb8e0">A constant-Jacobian endomorphism of &#8450;&#179; refutes <tspan fill="#e7ecff" font-weight="600">Keller (1939)</tspan>,</text>
+  <text x="70" y="301" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#aeb8e0">and its Weyl-algebra shadow refutes <tspan fill="#e7ecff" font-weight="600">Dixmier (1968)</tspan>.</text>
+
+  <!-- pills -->
+  <g font-family="'SF Mono','Consolas',ui-monospace,monospace" font-size="14">
+    <rect x="70" y="326" width="140" height="28" rx="14" fill="#12233f" stroke="#7fe9ff" stroke-opacity="0.6"/>
+    <text x="140" y="345" text-anchor="middle" fill="#bfefff">det J &#8801; &#8722;2</text>
+    <rect x="222" y="326" width="140" height="28" rx="14" fill="#2a1b45" stroke="#ff6ad5" stroke-opacity="0.6"/>
+    <text x="292" y="345" text-anchor="middle" fill="#ffcdf0">&#966; &#8712; End(A&#8323;)</text>
+    <rect x="374" y="326" width="188" height="28" rx="14" fill="#3a2a12" stroke="#f5c451" stroke-opacity="0.6"/>
+    <text x="468" y="345" text-anchor="middle" fill="#ffe9b8">injective, not onto</text>
+  </g>
+
+  <!-- 3 : 1 collapse motif -->
+  <g font-family="'SF Mono','Consolas',ui-monospace,monospace">
+    <text x="1075" y="58" text-anchor="middle" font-size="25" fill="#f5c451" fill-opacity="0.9" font-family="Georgia,serif" font-style="italic">3 &#8594; 1</text>
+
+    <path d="M992 116 Q1080 134 1150 176" fill="none" stroke="url(#wire)" stroke-width="2.5" stroke-opacity="0.85"/>
+    <path d="M992 184 H1150" fill="none" stroke="url(#wire)" stroke-width="2.5" stroke-opacity="0.85"/>
+    <path d="M992 252 Q1080 234 1150 192" fill="none" stroke="url(#wire)" stroke-width="2.5" stroke-opacity="0.85"/>
+
+    <g filter="url(#glow)">
+      <circle cx="982" cy="116" r="11" fill="#7fe9ff"/>
+      <circle cx="982" cy="184" r="11" fill="#ff6ad5"/>
+      <circle cx="982" cy="252" r="11" fill="#b48bff"/>
+      <circle cx="1160" cy="184" r="19" fill="#f5c451"/>
+    </g>
+
+    <g font-size="13" fill="#c8d2f2" text-anchor="end">
+      <text x="966" y="102">(0, 0, &#8722;&#188;)</text>
+      <text x="966" y="170">(1, &#8722;3&#8260;2, 13&#8260;2)</text>
+      <text x="966" y="238">(&#8722;1, 3&#8260;2, 13&#8260;2)</text>
+    </g>
+    <text x="1160" y="228" text-anchor="middle" font-size="14" fill="#ffe9b8">(&#8722;&#188;, 0, 0)</text>
+  </g>
+</svg>
