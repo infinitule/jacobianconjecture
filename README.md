@@ -78,6 +78,32 @@ $$
 An endomorphism of the Weyl algebra that is not an automorphism is precisely a
 **counterexample to the Dixmier Conjecture** in dimension $3$.
 
+### The explicit endomorphism (run `python3 dixmier.py`)
+
+$$
+\varphi(x_1)=f_1,\qquad \varphi(x_2)=f_2,\qquad \varphi(x_3)=f_3,
+$$
+
+and, writing $J^{-1}=J_F^{-1}$ (polynomial entries, since $\det J_F=-2$),
+
+$$
+\varphi(\partial_i)=\sum_{k=1}^{3}(J^{-1})_{ki}\,\partial_k ,
+$$
+
+for example
+
+$$
+\varphi(\partial_3)=\Big(\tfrac12+\tfrac32xy-\cdots-\tfrac32 x^5y^5\Big)\partial_1
++\Big(-\tfrac32 z-6y^2-\cdots\Big)\partial_2
++\Big(\tfrac{21}{2}yz+\cdots+\tfrac92 x^5y^4z^2\Big)\partial_3 .
+$$
+
+`dixmier.py` prints all nine coefficient polynomials in full and checks the
+three families of Weyl-algebra relations — $[\varphi(x_i),\varphi(x_j)]=0$,
+$[\varphi(\partial_i),\varphi(x_j)]=\delta_{ij}$,
+$[\varphi(\partial_i),\varphi(\partial_j)]=0$ — all pass, so $\varphi$ is a
+genuine algebra endomorphism of $A_3$.
+
 So the single construction refutes **two** long-standing conjectures at once:
 $F$ kills $\mathrm{JC}_3$ directly, and its Weyl-algebra shadow $\varphi$ kills
 $\mathrm{DC}_3$. (For context, the *hard* direction $\mathrm{JC}_{2n}\Rightarrow
@@ -90,6 +116,7 @@ direction.)
 | file | purpose |
 |------|---------|
 | `verify.py` | exact-arithmetic verification of facts (1)-(3) and the Weyl-algebra bridge |
+| `dixmier.py` | writes out the explicit endomorphism $\varphi$ of $A_3$ and checks every relation |
 
 ## Caveat, stated plainly
 
