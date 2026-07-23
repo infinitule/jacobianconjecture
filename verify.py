@@ -3,6 +3,9 @@
 Machine-checkable verification of the claimed Jacobian-Conjecture counterexample
 and its induced Weyl-algebra (Dixmier) counterexample.
 
+The counterexample F is due to Levent Alpoge (@__alpoge__, https://alpo.ge),
+announced 2026-07-20, found with Claude Fable 5. This script only verifies it.
+
 Everything is done in exact arithmetic (sympy), so the output is a proof, not a
 numerical estimate.  Run:  python3 verify.py
 """

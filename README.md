@@ -7,6 +7,12 @@
   that refutes the <b>Jacobian Conjecture</b> — and, through its Weyl-algebra shadow, the <b>Dixmier Conjecture</b>.</em>
 </p>
 
+<p align="center">
+  Counterexample by <b>Levent Alpöge</b>
+  (<a href="https://x.com/__alpoge__/status/2079028340955197566">@__alpoge__</a> · <a href="https://alpo.ge">alpo.ge</a>),
+  announced 20 July 2026, found with Claude Fable 5.
+</p>
+
 ---
 
 ## TL;DR
@@ -19,6 +25,18 @@
 > that is injective but not surjective — a counterexample to the **Dixmier Conjecture** (1968).
 > Everything below is checked by `python3 verify.py` and `python3 dixmier.py` in exact
 > (rational/symbolic) arithmetic.
+
+## Credit
+
+The counterexample $F$ is due to **Levent Alpöge**
+([@__alpoge__](https://x.com/__alpoge__/status/2079028340955197566) · [alpo.ge](https://alpo.ge)),
+who announced it on X on **20 July 2026**, found with the assistance of **Claude Fable 5**.
+Within hours it was independently verified by mathematicians worldwide; it refutes the
+Jacobian Conjecture in every dimension $n\ge 3$ (the $n=2$ case remains open).
+
+This repository only *verifies* that counterexample in exact arithmetic and works out one
+standard consequence — the induced counterexample to the Dixmier Conjecture. **All credit for
+the map itself belongs to Alpöge.**
 
 ## The map
 
@@ -174,6 +192,7 @@ conclusion.
 
 ## References
 
+- L. Alpöge, [counterexample to the Jacobian Conjecture](https://x.com/__alpoge__/status/2079028340955197566), X, 20 July 2026 (found with Claude Fable 5). Homepage: [alpo.ge](https://alpo.ge).
 - O.-H. Keller, *Ganze Cremona-Transformationen*, Monatsh. Math. Phys. **47** (1939).
 - J. Dixmier, *Sur les algèbres de Weyl*, Bull. Soc. Math. France **96** (1968).
 - A. van den Essen, *Polynomial Automorphisms and the Jacobian Conjecture*, Birkhäuser (2000).
