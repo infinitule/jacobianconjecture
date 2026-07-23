@@ -15,6 +15,16 @@
 
 ---
 
+## About
+
+This repository gives an independent, fully reproducible, **exact-arithmetic** check of the
+polynomial map that refutes the **Jacobian Conjecture** (Keller, 1939), together with the
+worked-out consequence for the **Dixmier Conjecture** (1968). The counterexample is due to
+[Levent Alpöge](https://alpo.ge); the code here does not claim it — it verifies it (constant
+Jacobian, $3{:}1$ non-injectivity) and then derives the standard Weyl-algebra corollary. Two
+short Python scripts, no dependencies beyond [`sympy`](https://www.sympy.org). Read it top to
+bottom, or just run the scripts and watch every assertion pass.
+
 ## TL;DR
 
 > There is a polynomial map $F:\mathbb C^3\to\mathbb C^3$ whose Jacobian determinant is the
