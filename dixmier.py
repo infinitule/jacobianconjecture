@@ -3,6 +3,10 @@
 The explicit Dixmier counterexample induced by the Jacobian-Conjecture
 counterexample F.
 
+The counterexample F is due to Levent Alpoge (@__alpoge__, https://alpo.ge),
+announced 2026-07-20, found with Claude Fable 5. This script derives the standard
+Weyl-algebra consequence; credit for the map itself belongs to Alpoge.
+
 The Dixmier Conjecture (1968) asserts that every algebra endomorphism of the
 Weyl algebra A_n is an automorphism.  Here we write down an *explicit*
 endomorphism phi of A_3 that is injective but NOT surjective, i.e. an
